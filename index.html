@@ -4,119 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="newStyle.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title> Shuler MeHaffey - Portfolio </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Shuler MeHaffey </title>
 </head>
 <body>
 
-    <header>
-            <div class="jumbotron jumbotron-fluid"> 
-                <div class="container"> 
-                    <h1 class="display-3"> Shuler MeHaffey's Portfolio Page </h1> 
-                    <p class="lead"> Hi, I'm a tech salesman looking to move into product development. Hover over the boxes to learn more... unless you're on a tablet or mobile device, then you'll need to tap the box :) </p> 
-                </div> 
-            </div>
-    </header>
-    <div class="container">
-    <div class="row">
-    <div class="col-lg-3" id="aboutMe">
-        
-        <h4 id="aboutMeTitle"> About Me: </h4>
-            <div class="scrollBox" id="aboutMeContent"> 
-                    <h4> About Me: </h4> 
-                        <P> 
-                                Hello, I'm Mark MeHaffey. I go by my middle name -- Shuler.
-                                I always have and always will. My parents have both blessed me with a unique name and 
-                                cursed me by forcing me to have to sometimes, mostly in professional and classroom settings, 
-                                explain this to people. 
-                                I'd like to thank you for visiting my page 
-                                and share with you a little bit about who I am. 
-                                Upon graduating from The University of North Carolina at Chapel Hill 
-                                with a degree in economics I moved to Austin and began working as an 
-                                Application Sales Representative for Oracle. <br><br>
-            
-                                A combination of my excitment for technology and my joy for problem-solving 
-                                has led me to coding and web development. My exploration into this field started with some self-learning
-                                in mid 2018 and has turned into me attending the <a href="https://techbootcamps.utexas.edu/coding/">
-                                Full Stack Web Development Coding Bootcamp at UT Austin.</a> I'm excited for the opportunity to 
-                                continue to grow my knowledge, skills and portoflio as I attempt to break into a profession more reliant on 
-                                the ability to read, write and comprehend code. <br><br>
-            
-                                When I'm not working or coding I love watching Tarheel basketball, Volunteer football
-                                and the Los Angeles Dodgers. I enjoy reading for recreation and hanging outside with friends.<br><br>
-
-                                Relevant Skills: JavaScript, jQuery, HTML5/CSS3, Bootstrap, Git, Responsive Design, API/JSON, RESTful API, Firebase, Ajax, State Management and Command Line.
-                        </P>
-            </div>
-
-    </div>
-
-    <div class="col-lg-1"></div>
-
-    <div class="col-lg-4" id="portfolioMe">
-
-        <h4 id="portfolioMeTitle"> Portfolio: </h4>
-            <div class="scrollBox" id="portfolioMeContent"> 
-                    <h4> Portfolio: </h4> 
-                        <div class="PP1">
-                            <a href="https://msmehaffey.github.io/unit-4-game/" target="_blank">
-                                <img src="project.jpg" alt="Dodgers Game">
-                            </a> 
-                                <h4> Dodgers Game </h4>
-                        </div>
-                        <div class="PP2">
-                            <a href="https://msmehaffey.github.io/TriviaGame/" target="_blank">
-                                <img src="project.jpg" alt="Trivia Game">
-                            </a>
-                                    <h4> Trivia Game </h4>
-                        </div>
-                        <div class="PP3">
-                            <a href="https://msmehaffey.github.io/gifTasticHW6/" target="_blank">
-                                <img src="project.jpg" alt="Gif Search">
-                            </a>
-                                    <h4> NFL QB Gif Search </h4>
-                        </div>
-                        <div class="PP4">
-                            <a href="https://msmehaffey.github.io/HW7/" target="_blank">
-                                <img src="project.jpg" alt="Placeholder1">
-                            </a>
-                                <h4> Train Scheduler </h4>
-                        </div>
-
-            </div>
-        
-    </div>
-
-    <div class="col-lg-1"></div>
-
-    <div class="col-lg-3" id="contactMe">
-
-        <h4 id="contactMeTitle"> Contact Me: </h4>
-            <div class="scrollBox" id="contactMeContent"> 
-                    <h4> Contact Me: </h4> 
-                    <div class="PP1">
-                        <a href="https://www.linkedin.com/in/shulermehaffey/" target="_blank">
-                            <img src="linkedInthbnl.jpg" alt="Dodgers Game">
-                        </a> 
+    <nav class="nav-extended nav-center">
+            <div class="nav-wrapper container">
+                <br>
+                <div class="center-align">
+                    <img src="css/pictures/LinkedinPic.jpg" class="circle responsive-img center-align z-depth-5" id="headImage">
+                    <h4> <strong> Shuler MeHaffey</strong> </h4>
+                </div>
+                    
+                
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#about"><h6> About</h6></a></li> 
+                        <li class="tab"><a class="active" href="#projects"><h6> Projects </h6></a></li>
+                        </ul>
                     </div>
-                    <div class="PP1">
-                        <a href="https://github.com/msmehaffey" target="_blank">
-                            <img src="githubthbnl.jpg" alt="Dodgers Game">
-                        </a> 
-                    </div>
+                
+            </div>
+            </nav>
+          
+          
+            <div id="about" class="col s12 container">
+                <div class="row">
+                   <h5 id="aboutHeader"><i class="material-icons">tag_faces</i> About Me </h5>
+                </div>
+                        <div class="card z-depth-4">
+                                <div class="card-content">
+                                    <p>
+                                        Hello! Thanks for stopping by, I'm Shuler -- an aspiring, full-stack web developer with a passion for using technology to solve real-world problems. <br><br>
+
+                                        Technolgies/Skills include:<br>
+
+                                        JavaScript, jQuery, Node.js, Express, HTML/CSS, Bootstrap, Materialize, Git, HandleBars, Heroku, Responsive Design, API/JSON, RESTful API, Firebase, MySQL, Ajax, State Management, Active Record and Command Line.<br><br>
+
+                                        You can find an overview, my github
+                                        and all my other contact information below.<br><br></p>
+                                        
+                                </div>
+                                    <div class="card-tabs">
+                                    <ul class="tabs tabs-fixed-width">
+                                        <li class="tab"><a class="active" href="#overview"> Overview </a></li>
+                                        <li class="tab"><a href="#contact"> Contact </a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-content grey lighten-4">
+                                        <div id="overview">
+
+                                            
+                                            <p>Over a year ago I became interested in programming after meeting some friends who did this for a living. A combination of my excitment for techology 
+                                            and my joy for problem-solving quickly led me to fall in love with the endless possbilities that coding provides at your fingertips. After many hours of self learning I decided to
+                                            apply to, and eventually enroll in, the <a href="https://techbootcamps.utexas.edu/coding/"> Full Stack Web Development Coding Bootcamp at UT Austin.</a> I'd like to think that my decision to 
+                                            take on the bootcamp while working fulltime exhibits my passion for coding, my thirst for knowledge, my ability to learn and do it quickly but also my nack for managing my time wisely and efficiently.<br><br>
+    
+                                            The bootcamp has helped me to take my knowledge to the next level. Everyday I continue to improve and learn new technologies. While I'm proficient with many technologies and a quick learner,
+                                            I also am very good at connecting with people on a personal level. I think something that is unique about me is my abiliity to make and nurture realationships by behaving in both a professional
+                                            and courteous manner at all times.<br><br>
+    
+                                            I hold a degree in Economics from The University of North Carolina at Chapel Hill and I will complete the UT Austin Coding Bootcamp in early April 2019.<br><br>
+    
+                    
+                                            When I'm not working or coding I love watching Tarheel basketball, Volunteer football
+                                            and the Los Angeles Dodgers. I enjoy reading for recreation and hanging outside with friends.</p>
+                                
+
+
+                                    </div>
+                                    <div id="contact">
+
+                                        <div class="row center">
+                                            <h5>Shuler MeHaffey </h6>
+                                            <h6> <em>Email:</em> msmehaf2@gmail.com</h6>   
+                                            <h6><em>Phone:</em> (336) 266 7196 </h6>
+                                        </div>
+
+                                        <div class="row center">
+                                            
+                                            
+                                                <a href="https://github.com/msmehaffey" target="_blank"><img src="css/pictures/github-logo.png" alt="github" style="width:100px"></a>
+
+                                        
+                                                <a href="https://www.linkedin.com/in/shulermehaffey/" target="_blank"><img src="css/pictures/linkedin-logo.png" alt="linkedin" style="width:100px"></a>                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
             </div>
             
-        
-    </div>
-    </div>
-    </div>
 
-        
 
-<script src="script.js"></script>
+
+
+            <div id="projects" class="col s12 container"> 
+                <br><br>
+                
+                <div class="row">
+
+                            <div class="col m4">
+                                <div class="card white darken-1 z-depth-4 small">
+
+                                    <div class="card-content light-blue-text materialboxed">
+                                        <span class="card-title"> CLI Storefront </span>
+                                        <p>Amazon-like storefront app that has a customer facing feature and a feature for the store or manager. 
+                                            <br><br>
+                                            Highlighted Technologies: Node.js, Javascript, MySQL. </p>
+                                    </div>
+
+                                    <div class="card-action">
+                                        <a href="https://github.com/msmehaffey/CLI_Storefront">Github Repo</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col m4">
+                                <div class="card white darken-1 z-depth-4 small">
+            
+                                    <div class="card-content light-blue-text materialboxed">
+                                        <span class="card-title"> Friend Finder </span>
+                                        <p>A compatibility-based Friend Finder application. This is a full-stack site that takes results from a users' survey and then compares their answer with those of other users.<br><br>
+                                        Highlighted Technologies: Node.js, JavaScript, Express, Heroku.</p>
+                                    </div>
+            
+                                    <div class="card-action">
+                                            <a href="https://github.com/msmehaffey/friendFinder/blob/master/README.md">Github Repo</a>
+                                            <a href="https://secure-ridge-26423.herokuapp.com/">Live Link</a>
+                                    </div>
+            
+                                </div>
+                            </div>
+
+                            <div class="col m4">
+                                <div class="card white darken-1 z-depth-4 small">
+                
+                                    <div class="card-content light-blue-text materialboxed">
+                                        <span class="card-title"> Train Schedule </span>
+                                        <p>A train schedule application that incorporates Firebase to host arrival and departure data.<br><br>
+                                        Highlighted Technologies: JavaScript, Moment.js, Firebase, HTML/Bootstrap.</p>
+                                    </div>
+                
+                                    <div class="card-action">
+                                        <a href="https://github.com/msmehaffey/trainSchedule">Github Repo</a>
+                                        <a href="https://msmehaffey.github.io/trainSchedule/">Live Link</a>
+                                    </div>
+                
+                                </div>
+                            </div>
+                </div>
+
+                <br><br>
+
+                <div class="row">
+                            <div class="col m4">
+                                <div class="card white darken-1 z-depth-4 small">
+                    
+                                    <div class="card-content light-blue-text materialboxed">
+                                        <span class="card-title"> Liri-node-app </span>
+                                        <p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.</p>
+                                    </div>
+                    
+                                    <div class="card-action">
+                                        <a href="https://github.com/msmehaffey/liri-node-app">Github Repo</a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+
+                </div>
+
+            </div>
+                  
+    </nav>
+
+
+
+
+<footer class="page-footer light-blue accent-1" style="height:75px"></footer>    
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/script.js"></script>
 </html>
